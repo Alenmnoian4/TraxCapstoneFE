@@ -15,53 +15,54 @@ const Show = () => {
   };
 
   return (
-    <div style={div}>
-      <h1>{post.name}</h1>
-      <h2>{post.workout}</h2>
-      <h2>{post.meal}</h2>
-      <h2>{post.weight}</h2>
-      <h2>{post.notes}</h2>
+
+    <div class={div}>
+      <h1 className="font-bold py-2 px-4 border-b-4 border-[#00df9a]">{post.name}</h1>
+      <h2 className="font-bold py-2 px-4 border-b-4 border-[#00df9a]">{post.workout}</h2>
+      <h2 className="font-bold py-2 px-4 border-b-4 border-[#00df9a]">{post.meal}</h2>
+      <h2 className="font-bold py-2 px-4 border-b-4 border-[#00df9a]">{post.weight}</h2>
+      <h2 className="font-bold py-2 px-4 border-b-4 border-[#00df9a]">{post.notes}</h2>
       <div style={{ textAlign: "center" }}>
-        <h2>Create a Trax</h2>
+        <h2 className= 'w-full text-6xl font-bold text-[#00df9a] bg-black py-2 px-4 border-b-4 border-[#00df9a]'>Trax Logs</h2>
         <Form action={`/update/${post.id}`} method="post">
-          <input
+          <input className="font-bold py-2 px-4 border-b-4 border-[#00df9a]"
             type="text"
             name="name"
             placeholder="enter name here"
             defaultValue={post.name}
           />
-          <input
+          <input className="font-bold py-2 px-4 border-b-4 border-[#00df9a]"
             type="text"
             name="workout"
             placeholder="enter workout here"
             defaultValue={post.workout}
           />
-          <input
+          <input className="font-bold py-2 px-4 border-b-4 border-[#00df9a]"
             type="text"
             name="meal"
             placeholder="enter meal here"
             defaultValue={post.meal}
           />
-          <input
+          <input className="font-bold py-2 px-4 border-b-4 border-[#00df9a]"
             type="text"
             name="weight"
             placeholder="enter weight here"
             defaultValue={post.weight}
           />
-          <input
+          <input className="font-bold py-2 px-4 border-b-4 border-[#00df9a]"
             type="text"
             name="notes"
             placeholder="enter notes here"
             defaultValue={post.notes}
           />
-          <button>Update Trax</button>
+          <button class="bg-[#1c1917] hover:bg-[#404040] text-[#00df9a] font-b font-bold py-2 px-4 border-b-4 border-[#00df9a] hover:border-[#00df9a] rounded mr-5">Update Trax</button>
         </Form>
         <Form action={`/delete/${post.id}`} method="post">
-          <button>Delete Trax</button>
+          <button class="bg-[#1c1917] hover:bg-[#404040] text-[#00df9a] font-bold py-2 px-4 border-b-4 border-[#00df9a] hover:border-[#00df9a] rounded mr-5">Delete Trax</button>
         </Form>
       </div>
       <Link to="/">
-        <button>Go Back</button>
+        <button class="bg-[#1c1917] hover:bg-[#404040] text-[#00df9a] font-bold py-2 px-4 border-b-4 border-[#00df9a] hover:border-[#00df9a] rounded mr-5">Go Back</button>
       </Link>
     </div>
   );

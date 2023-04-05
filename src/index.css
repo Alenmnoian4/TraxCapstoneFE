@@ -15,3 +15,17 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background: url("https://cdn.pixabay.com/photo/2015/09/05/20/20/adventure-925049_1280.jpg");
+  background-color: rgb(177, 175, 175);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+  /* background-image: url("https://i.imgur.com/vl1804K.jpg");
+background-repeat: no-repeat;
+background-position: center;
+width: 10px;
+height: 20px; */
+  /* background-color: #000300; */

@@ -14,12 +14,12 @@ const Post = ({ post }) => {
   return (
     <div style={div}>
       <Link to={`/post/${post.id}`}>
-        <h1>{post.name}</h1>
+        <h1 className="font-bold py-2 px-4 border-b-4 border-[#00df9a]">{post.name}</h1>
       </Link>
-      <h2>{post.workout}</h2>
-      <h2>{post.meal}</h2>
-      <h2>{post.weight}</h2>
-      <h2>{post.notes}</h2>
+      <h2 className="font-bold py-2 px-4 border-b-4 border-[#00df9a]">{post.workout}</h2>
+      <h2 className="font-bold py-2 px-4 border-b-4 border-[#00df9a]">{post.meal}</h2>
+      <h2 className="font-bold py-2 px-4 border-b-4 border-[#00df9a]">{post.weight}</h2>
+      <h2 className="font-bold py-2 px-4 border-b-4 border-[#00df9a]">{post.notes}</h2>
     </div>
   );
 };

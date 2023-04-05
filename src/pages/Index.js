@@ -6,15 +6,21 @@ const Index = (props) => {
   const traxs = useLoaderData()
   // For each post in the array render a Post component
   return <>
-  <div style={{textAlign: "center"}}>
-  <h2>Create a Trax Log</h2>
+  <div class="bg-gray-600 hover:bg-[#404040] text-white font-bold py-2 px-4 border-b-4 border-[#00df9a] hover:border-[#00df9a] rounded mr-8"></div>
+  <div 
+  
+  style={{textAlign: "center"}}>
+    <h1 class="bg-[#1c1917] hover:bg-[#404040] text-[#00df9a] text-6xl text sizefont-bold py-2 px-4 border-b-4 border-[#00df9a] hover:border-[#00df9a] rounded mr-8">Trax</h1>
+  <Form action="/create" method="post"></Form>
+  <h1 class="bg-[#1c1917] hover:bg-[#404040] text-[#00df9a] text-6xl text sizefont-bold py-2 px-4 border-b-4 border-[#00df9a] hover:border-[#00df9a] rounded mr-8">Fitness Journal</h1>
+  
   <Form action="/create" method="post">
-      <input type="text" name="name" placeholder="enter your name here"/>
-      <input type="text" name="workout" placeholder="enter workout here"/>
-      <input type="text" name="meal" placeholder="enter meal here"/>
-      <input type="text" name="weight" placeholder="enter weight here"/>
-      <input type="text" name="notes" placeholder="enter notes here"/>
-      <button>Create New Trax Log</button>
+      <input className="font-bold py-2 px-4 border-b-4 outline-stone-700 border-[#00df9a]"type="text" name="name" placeholder="enter your name here"/>
+      <input className="font-bold py-2 px-4 border-b-4 outline-stone-700 border-[#00df9a]"type="text" name="workout" placeholder="enter workout here"/>
+      <input className="font-bold py-2 px-4 border-b-4 outline-stone-700 border-[#00df9a]"type="text" name="meal" placeholder="enter meal here"/>
+      <input className="font-bold py-2 px-4 border-b-4 outline-stone-700 border-[#00df9a]"type="text" name="weight" placeholder="enter weight here"/>
+      <input className="font-bold py-2 px-4 border-b-4 outline-stone-700 border-[#00df9a]"type="text" name="notes" placeholder="enter notes here"/>
+      <button class="bg-[#1c1917] hover:bg-[#404040]  text-[#00df9a] font-bold py-2 px-4 border-b-4 border-[#00df9a] hover:border-[#00df9a] rounded mr-8">Create New Trax Log</button>
   </Form>
   </div>
   {traxs.map((post) => <Post post={post} key={post.id} />)}
