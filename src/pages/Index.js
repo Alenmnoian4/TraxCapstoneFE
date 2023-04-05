@@ -10,7 +10,7 @@ const Index = (props) => {
   <div 
   
   style={{textAlign: "center"}}>
-    <h1 class="bg-[#1c1917] hover:bg-[#404040] text-[#00df9a] text-6xl text sizefont-bold py-2 px-4 border-b-4 border-[#00df9a] hover:border-[#00df9a] rounded mr-8">Trax</h1>
+    <h1 class="bg-[#1c1917] hover:bg-[#404040] text-[#00df9a] text-6xl text sizefont-bold py-2 px-4 border-b-4 border-[#00df9a] hover:border-[#00df9a] rounded mr-8">TraxErcise</h1>
   <Form action="/create" method="post"></Form>
   <h1 class="bg-[#1c1917] hover:bg-[#404040] text-[#00df9a] text-6xl text sizefont-bold py-2 px-4 border-b-4 border-[#00df9a] hover:border-[#00df9a] rounded mr-8">Fitness Journal</h1>
   
